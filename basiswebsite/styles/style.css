@@ -50,7 +50,7 @@
 }
 
 @font-face {
-	font-family: "Suisse-BP-intl-regular";
+	font-family: Suisse-BP-intl-regular;
 	src: url(./rca-fonts/Suisse-BP-intl-regular.woff2); 
 }
 
@@ -74,9 +74,6 @@ ul {
 	list-style: none;
 }
 
-section {
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
 
 
 
