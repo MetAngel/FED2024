@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Responsive
+  Surface
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.rcarecords.com 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home  
+  <img src="readme-images/home-ss.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Artist (A$AP Rocky)  
+  <img src="readme-images/artist-ss.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -57,6 +57,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - De website maakt gebruik van marquee tekst die van rechts naar links bewegen, dat is niet toegankelijk voor mensen die slechtziend zijn. Dit wordt dan meerdere keren herhaald met de screenreader.
+
+  - Het stukje "Curated by RCA" maken ze gebruik van een slideshow die automatisch steeds van de 1e en 2e card afwisselt. Dit zorgt ervoor dat je niet genoeg tijd hebt om te lezen, omdat het de hele tijd beweegt.
+
+  - Vervolgens heb je boven de footer 3 linkjes die rond zijn en steeds roteren. Dit is niet snel leesbaar. Het werkt wel met screenreader. Dus het is gewoon decoratief.
+
+  - Bij de slideshows zie je 2 buttons om naar links en recht te gaan, maar voice over zegt alleen "button". Dus je weet niet voor wat de button gebruikt kan worden.
+
+  - De fotos boven aan wordt niet gelezen door de screenreader, dus moet het een background image zijn die de heletijd verandert van foto? Is een gif?
+
+  - Voor de cards met linkjes wordt het niet als een card beschreven op volgorde, dus je zou niet precies met screenreader kunnen weten dat het bij elkaar hoort.
 
 </details>
 
