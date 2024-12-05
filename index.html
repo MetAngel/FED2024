@@ -20,11 +20,11 @@
 		<img src="images/rca-logo.svg" alt="RCA Records text-logo met alternatieve typografie">
 	</a>
 
-	<nav>
-		<button>Menu</button>
-		<ul>
-		<section>
+	<button id="menu-btn">Menu</button>
 
+<div id="hamburger-menu" class="menu">
+	<nav class="menu-content">
+		<ul>
 			<li>
 				Home
 			</li>
@@ -44,10 +44,8 @@
 			<li>
 				Shop
 			</li>
+		</ul>
 
-		</section>
-
-		<section>
 		<!-- HTML input element e-mail: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email -->
 		<input type="email" placeholder="Your email" />
 		<button>Subscribe</button>
@@ -68,117 +66,140 @@
 			<li>
 				Facebook
 			</li>
+		</ul>
 
-		</ul>
-		</section>
-		</ul>
+		<button aria-label="randomize page button" class="lucky">I'm feeling lucky</button>
+		<button aria-label="sluit menu" class="close">Close</button>
 	</nav>
+</div>
 
 </header>
 
-	<section>
+	<div class="hero-slide">
 		<h1>RCA RECORDS</h1>
-		<!-- insert automatic slideshow -->
-		<img src="" alt="">
-	</section>
+	</div>
 
-	<section>
+	<div class="carouselbtns">
 		<h2>NEW RELEASES</h2>
-		<button>
-			<img src="images/arrow-left.svg" alt="knop met een pijl naar links">
-		</button>
-		<button>
-			<img src="images/arrow-right.svg" alt="knop met een pijl naar rechts">
-		</button>
+			<!-- codepen gebruik ahref ? waarom dit en geen buttons? -->
+
+			<button>
+				<img src="images/arrow-left.svg" alt="knop met een pijl naar links">
+			</button>
+			<button>
+				<img src="images/arrow-right.svg" alt="knop met een pijl naar rechts">
+			</button>
+	</div>
 		<!-- insert card slider, css/js? -->
+
+	<section id="new-releases" class="carousel" aria-label="links/rechts buttons" tabindex="-1">
 		<ul>
-			<li>
-				<img src="images/new-1.jpg" alt="">
+			<li id="element1">
+				<img src="images/new-1.jpg" alt="Golden hour:Part. 2 album cover">
 				<p>EP</p>
 				<p>ATEEZ -- GOLDEN HOUR:Part.2</p>
 			</li>
 			
-			<li>
-				<img src="images/new-2.png" alt="">
+			<li id="element2">
+				<img src="images/new-2.png" alt="Dont Sleep While It's Lit - part 2 cover">
 				<p>SINGLE</p>
 				<p>Sheff G -- Don't Sleep While It's Lit - Part 2</p>
 			</li>
 
-			<li>
-				<img src="images/new-3.jpg" alt="">
+			<li id="element3">
+				<img src="images/new-3.jpg" alt="Kese(Dance) cover">
 				<p>SINGLE</p>
 				<p>WizKid -- Kese(Dance)</p>
 			</li>
 
-			<li>
-				<img src="images/new-4.jpg" alt="">
+			<li id="element4">
+				<img src="images/new-4.jpg" alt="Occasional Stoner cover">
 				<p>SINGLE</p>
 				<p>Eyedress -- Occasional Stoner</p>
 			</li>
 
-			<li>
-				<img src="images/new-5.jpg" alt="">
+			<li id="element5">
+				<img src="images/new-5.jpg" alt="The Red Clays Strays - Live At The Ryman album cover">
 				<p>ALBUM/p>
 				<p>The Red Clays Strays -- Live At The Ryman</p>
 			</li>
 
-			<li>
-				<img src="images/new-6.jpg" alt="">
+			<li id="element6">
+				<img src="images/new-6.jpg" alt="2 hands cover">
 				<p>SINGLE</p>
 				<p>Tate McRae -- 2 hands</p>
 			</li>
 
-			<li>
-				<img src="images/new-7.png" alt="">
+			<li id="element7">
+				<img src="images/new-7.png" alt="Sli'merre 2 album cover">
 				<p>ALBUM</p>
 				<p>Young Nudy -- Sli'merre 2</p>
 			</li>
 
-			<li>
-				<img src="images/new-8.jpg" alt="">
+			<li id="element8">
+				<img src="images/new-8.jpg" alt="Ash (feat. Deb Never) cover">
 				<p>SINGLE</p>
 				<p>Matt Champion -- Ash(feat.Deb Never)</p>
 			</li>
 
-			<li>
-				<img src="images/new-9.jpeg" alt="">
+			<li id="element9">
+				<img src="images/new-9.jpeg" alt="A Minute... album cover">
 				<p>ALBUM</p>
 				<p>Myles Smith -- A Minute...</p>
 			</li>
 
-			<li>
-				<img src="images/new-10.jpeg" alt="">
+			<li id="element10">
+				<img src="images/new-10.jpeg" alt="Darold album cover">
 				<p>ALBUM</p>
 				<p>FERG -- DAROLD</p>
 			</li>
 		</ul>
+
 	</section>
 
-	<section>
+<section>
 		<!-- insert scrolling text ofwel HTML Marquee tag 
 		MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee
 		W3: https://www.w3schools.in/html/marquee-tag
 		Medium: https://medium.com/@idorenyinudoh10/how-to-implement-marquees-on-the-web-146db3ba99e0 -->
 
-		<marquee>NEW MUSIC VIDEOS</marquee>
+<section class="marqueebox" >
+		<marquee class="newmusic">NEW MUSIC VIDEOS</marquee>
+
+	<div class="marquee-1">
 		<marquee>
 			<p>TATE MCRAE--IT'S OK IM OK (OFFICIAL VIDEO)</p>
-			<button>WATCH</button>
 		</marquee>
 
+		<div class="watch-container">
+			<a href="#">WATCH</a>
+		</div>
+	</div>
+
+	<div class="marquee-2">
 		<marquee>
 			<p>A$AP ROCKY--TAILOR SWIF (OFFICIAL VIDEO)</p>
-			<button>WATCH</button>
 		</marquee>
 
+		<div class="watch-container">
+			<a href="#">WATCH</a>
+		</div>
+	</div>
+
+	<div class="marquee-3">
 		<marquee>
 			<p>LISA--NEW WOMAN FEAT. ROSALÍA (OFFICIAL VIDEO)</p>
-			<button>WATCH</button>
 		</marquee>
 
-	</section>
+		<div class="watch-container">
+			<a href="#">WATCH</a>
+		</div>
+	</div>
 
-	<section>
+</section>
+
+
+		<div class="carouselbtns">
 			<h2>CURATED BY RCA</h2>
 			<button>
 				<img src="images/arrow-left.svg" alt="knop met een pijl naar links">
@@ -186,39 +207,42 @@
 			<button>
 				<img src="images/arrow-right.svg" alt="knop met een pijl naar rechts">
 			</button>
+		</div>
 
 		<!-- insert card slider, css/js? -->
+
+	<section id="curated-rca" class="carousel">
 		<ul>
 			<li>
-				<img src="images/curated-1.png" alt="">
+				<img src="images/curated-1.png" alt="The Red Clay Strays performing on stage on CBS Saturday Morning">
 				<p>ARTICLE</p>
 				<p>Saturday Sessions: The Red Clay Strays perform "Wanna Be Loved"</p>
 				<p>CBS SATURDAY MORNING</p>
 			</li>
 
 			<li>
-				<img src="images/curated-2.jpg" alt="">
+				<img src="images/curated-2.jpg" alt="Portrait of Jade">
 				<p>ARTICLE</p>
 				<p>JADE's 'Fantasy' Is State Of The Art Pop</p>
 				<p>CLASH</p>
 			</li>
 
 			<li>
-				<img src="images/curated-3.png" alt="">
+				<img src="images/curated-3.png" alt="Donald Glover posing lying on grass">
 				<p>ARTICLE</p>
 				<p>Donald Glover Has Emmys, Grammys and a Cultural Legacy. Now He Wants a Real Life</p>
 				<p>WALL STREET JOURNAL</p>
 			</li>
 
 			<li>
-				<img src="images/curated-4.jpg" alt="">
+				<img src="images/curated-4.jpg" alt="Portrait of Channel Tres with big speakers behind him">
 				<p>ARTICLE</p>
 				<p>CHANNEL TRES GOES WITH THE FEELING WHEN MAKING MUSIC</p>
 				<p>GALORE MAGAZINE</p>
 			</li>
 
 			<li>
-				<img src="images/curated-5.png" alt="">
+				<img src="images/curated-5.png" alt="Lisa posing sitting on a chair">
 				<p>ARTICLE</p>
 				<p>Blackpink's LISA Is Ready to Be Unleashed</p>
 				<p>ELLE US</p>
@@ -228,7 +252,7 @@
 	</section>
 
 
-	<section>
+	<div class="ronde-links">
 		<ul>
 			<li>MORE ABOUT RCA</li>
 			<li>
@@ -236,16 +260,23 @@
 			</li>
 			<li>MERCH</li>
 		</ul>
-	</section>
+	</div>
 
 <footer>
-	<section>
-		<p>Get the lastest from RCA</p>
-		<input type="email" placeholder="Your email" />
-		<button>Subscribe</button>
-	</section>
 
-	<section>
+	<div class="latest-rca">
+
+		<p>Get the lastest from RCA.</p>
+
+		<div class="email-container">
+			<input type="email" placeholder="Your email"/>
+		</div>
+
+		<button>Subscribe</button>
+	</div>
+
+
+	<div class="footerlink">
 		<ul>
 			<li>
 				ABOUT
@@ -278,13 +309,15 @@
 			<li>
 				TIKTOK
 			</li>
+		</ul>
+	</div>
 
-			<li>
 				<a href="index.html">
 					<img src="images/rca-logo.svg" alt="RCA Records text-logo met alternatieve typografie">
 				</a>
-			</li>
 
+	<div class="footerlink">
+		<ul>
 			<li>
 				Your Privacy
 			</li>
@@ -304,20 +337,19 @@
 			<li>
 				Do Not Sell My Personal Information
 			</li>
-
-			<!-- Kan je een href leeglaten? of beter de tekst een kleur geven in CSS? -->
+		 </ul>
+	</div>
+		
+		 <div class="rights">
 			<p>
 				Visit <a href="www.OnGuardOnline.gov">www.OnGuardOnline.gov</a> for social networking safety tips for parents and youth
 			</p>
 
 			<!-- HTML symbols: https://www.w3schools.com/html/html_symbols.asp -->
-			<p>
+			<p> 
 				&copy;2024 Sony Music Entertainment. All Rights Reserved.
 			</p>
-
-		</ul>
-
-	</section>
+		</div>
 
 </footer>
 
