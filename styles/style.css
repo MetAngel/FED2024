@@ -63,49 +63,55 @@
 /* jouw code */
 
 /* header */
+
 header {
-	background-color: transparent;
-	position: fixed;
-	padding: 1.25em;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	opacity: 1;
-	border-bottom: #FCFDF7 solid;
-	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 1em;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	border-bottom: #FCFDF7 solid;
+	width: 100vw;
+	/* background-color: #0F0E0E; */
+}
+
+.menu-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: none;
+	border: none;
+	padding: 0;
+	border-left: #FCFDF7 solid;
+}
+
+nav ul {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	transform: translateY(100%);
+	transition: transform -.3s ease;
+	text-transform: uppercase;
+}
+
+nav.toonMenu ul {
+	transform: translate(0);
+
 }
 
 header img {
-	/* width: 4em; */
-	height: 1em;
+	width: 4em;
 }
 
-
-/* modal: https://codepen.io/shooft/pen/yLmEKXN */
-
-.close {
-	position:absolute;
-	top:0;
-	right:0;
-	width:5em;
-	height: 5em;
-	/* wat is aspect ratio? */
-	aspect-ratio:1;
-} 
-
-#hamburger-menu {
-	display: none;
-	position: fixed;
-	right: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: #0F0E0E;
+#nav-first-ul {
+	/* font-size: 5em; */
 }
+
 
 .lucky {
 	position: absolute;
@@ -113,6 +119,9 @@ header img {
 	border-radius: 10em;
 	padding: 2em 1em;
 	background-color: #CEF851;
+	border: none;
+	text-transform: uppercase;
+
 }
 
 /* header end */
@@ -120,9 +129,13 @@ header img {
 /* hero slide section*/
 
 h1 {
+	font-family: Romie-Italic;
+	font-weight: 200;
+	text-transform: uppercase;
 	text-align: center;
 	margin-top: 8em;
 	font-size: 3em;
+	font-style: normal;
 }
 /* bron: https://brandkit.com/asset-page/170729-how-to-create-a-background-image-slide-show-using-css-animations-no-javascript-required */
 
@@ -159,9 +172,15 @@ h1 {
 
 /* new releases section */
 
+h2 {
+	font-size: 2em;
+}
+
 .carouselbtns {
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 1px #FCFDF7 solid;
+	margin-bottom: 2em;
 }
 
 .carousel {
@@ -171,13 +190,23 @@ h1 {
 }
 
 .carousel ul {
-	margin: 0;
+	margin: 2em .5em;
 	padding: 0;
 	display: flex;
 	overflow: hidden;
 	scroll-snap-type: inline mandatory;
 	scroll-behavior: smooth;
+	
 
+}
+
+.carousel ul li h3 {
+	color: #D98100;
+	text-transform: uppercase;
+}
+
+.carousel ul li p {
+	position: relatieve;
 }
 
 .carousel ul li {
@@ -371,6 +400,17 @@ footer img {
 /* footer end */
 
 
+/* artiesten pagina */
+
+/* download carousel */
+
+.news-img img {
+	width: 50%;
+}
+
+/* download carousel eind */
 
 
+
+/* artiesten pagina eind */
 

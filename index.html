@@ -20,11 +20,11 @@
 		<img src="images/rca-logo.svg" alt="RCA Records text-logo met alternatieve typografie">
 	</a>
 
-	<button id="menu-btn">Menu</button>
+<nav class="menu-content">
 
-<div id="hamburger-menu" class="menu">
-	<nav class="menu-content">
-		<ul>
+	<button id="menu-button">Menu</button>
+
+		<ul id="nav-first-ul">
 			<li>
 				Home
 			</li>
@@ -44,13 +44,19 @@
 			<li>
 				Shop
 			</li>
+
+			<li>
+				<button aria-label="randomize page button" class="lucky">I'm feeling lucky</button>
+			</li>
 		</ul>
 
+		<ul id="nav-second-ul">
+		    <li>
 		<!-- HTML input element e-mail: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email -->
 		<input type="email" placeholder="Your email" />
 		<button>Subscribe</button>
+			</li>
 
-		<ul>
 			<li>
 				Youtube
 			</li>
@@ -66,12 +72,13 @@
 			<li>
 				Facebook
 			</li>
+
 		</ul>
 
-		<button aria-label="randomize page button" class="lucky">I'm feeling lucky</button>
-		<button aria-label="sluit menu" class="close">Close</button>
+	
+		<!-- <button aria-label="sluit menu" class="close">Close</button> -->
+	
 	</nav>
-</div>
 
 </header>
 
@@ -90,67 +97,68 @@
 				<img src="images/arrow-right.svg" alt="knop met een pijl naar rechts">
 			</button>
 	</div>
+
 		<!-- insert card slider, css/js? -->
 
 	<section id="new-releases" class="carousel" aria-label="links/rechts buttons" tabindex="-1">
 		<ul>
 			<li id="element1">
 				<img src="images/new-1.jpg" alt="Golden hour:Part. 2 album cover">
-				<p>EP</p>
+				<h3>EP</h3>
 				<p>ATEEZ -- GOLDEN HOUR:Part.2</p>
 			</li>
 			
 			<li id="element2">
 				<img src="images/new-2.png" alt="Dont Sleep While It's Lit - part 2 cover">
-				<p>SINGLE</p>
+				<h3>SINGLE</h3>
 				<p>Sheff G -- Don't Sleep While It's Lit - Part 2</p>
 			</li>
 
 			<li id="element3">
 				<img src="images/new-3.jpg" alt="Kese(Dance) cover">
-				<p>SINGLE</p>
+				<h3>SINGLE</h3>
 				<p>WizKid -- Kese(Dance)</p>
 			</li>
 
 			<li id="element4">
 				<img src="images/new-4.jpg" alt="Occasional Stoner cover">
-				<p>SINGLE</p>
+				<h3>SINGLE</h3>
 				<p>Eyedress -- Occasional Stoner</p>
 			</li>
 
 			<li id="element5">
 				<img src="images/new-5.jpg" alt="The Red Clays Strays - Live At The Ryman album cover">
-				<p>ALBUM/p>
+				<h3>ALBUM</h3>
 				<p>The Red Clays Strays -- Live At The Ryman</p>
 			</li>
 
 			<li id="element6">
 				<img src="images/new-6.jpg" alt="2 hands cover">
-				<p>SINGLE</p>
+				<h3>SINGLE</h3>
 				<p>Tate McRae -- 2 hands</p>
 			</li>
 
 			<li id="element7">
 				<img src="images/new-7.png" alt="Sli'merre 2 album cover">
-				<p>ALBUM</p>
+				<h3>ALBUM</h3>
 				<p>Young Nudy -- Sli'merre 2</p>
 			</li>
 
 			<li id="element8">
 				<img src="images/new-8.jpg" alt="Ash (feat. Deb Never) cover">
-				<p>SINGLE</p>
+				<h3>SINGLE</h3>
 				<p>Matt Champion -- Ash(feat.Deb Never)</p>
 			</li>
 
 			<li id="element9">
 				<img src="images/new-9.jpeg" alt="A Minute... album cover">
-				<p>ALBUM</p>
+				<h3>ALBUM</h3>
 				<p>Myles Smith -- A Minute...</p>
 			</li>
 
 			<li id="element10">
 				<img src="images/new-10.jpeg" alt="Darold album cover">
-				<p>ALBUM</p>
+				<h3>ALBUM</h3>
 				<p>FERG -- DAROLD</p>
 			</li>
 		</ul>

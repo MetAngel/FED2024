@@ -1,14 +1,21 @@
 // JavaScript Document
 console.log("hi");
 
-// Hulp met modal voor hamburger menu https://www.w3schools.com/howto/howto_css_modals.asp
+const menuButton = document.querySelector('#menu-button');
 
-// const modal = document.querySelector(#hamburger-menu);
-// const modalbtn = document.querySelector(#menu-btn);
+menuButton.onclick = openMenu;
 
-// modalbtn.onclick = function() {
-//     modal.style.display ="block";
-// }
+function openMenu() {
+    const nav = document.querySelector('.menu-content');
+    nav.classList.toggle('toonMenu');
 
+// prompt: Hoe wijzig ik de tekst menu naar close ipv een kruisje
+// bron: ChatGPT
 
+if (nav.classList.contains('toonMenu')) {
+    menuButton.innerText = 'Close';
+  } else {
+    menuButton.innerText = 'Menu';
+  }
+}
 
